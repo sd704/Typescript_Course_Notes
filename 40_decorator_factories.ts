@@ -30,6 +30,9 @@ function autobind(target: (...args: any[]) => any, ctx: ClassMethodDecoratorCont
 }
 
 // Decorator factory
+// A decorator factory is a function that returns a decorator function. 
+// It allows you to pass parameters to customize the decorator's behavior before it's applied to a class, method, or field.
+// Without a factory, you can't pass custom values to decorators. With a factory, you can.
 function replacer<T>(inputValue: T) {
     // Field decorator logic
     return function replaceValue(target: undefined, ctx: ClassFieldDecoratorContext) {
@@ -47,7 +50,6 @@ function replacer<T>(inputValue: T) {
 // ECMAScript decorator
 @logger
 class P {
-    // This will execute right here
     @replacer('John')
     name = 'Max'
 
