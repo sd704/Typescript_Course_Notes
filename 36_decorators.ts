@@ -1,3 +1,6 @@
+// *** Decorators EXECUTE when the class defination is registered by JS / not when its instantiated
+
+
 // Decorator Logic
 // We need 2 arguments, target -> Class, ctx -> Context
 // ClassDecoratorContext is built into TS
@@ -7,14 +10,14 @@ function logger<T extends new (...args: any[]) => any>(target: T, ctx: ClassDeco
     console.log(ctx)
 
     // Output ->
-        // logger decorator
-        // [Function: P]
-        // {
-        //     kind: 'class',
-        //     name: 'P',
-        //     metadata: undefined,
-        //     addInitializer: [Function(anonymous)]
-        // }
+    // logger decorator
+    // [Function: P]
+    // {
+    //     kind: 'class',
+    //     name: 'P',
+    //     metadata: undefined,
+    //     addInitializer: [Function(anonymous)]
+    // }
 
     // This is how we can modify the class [OPTIONAL]
     // We are returning a anonymous class based on actual class, this class will replace class P
