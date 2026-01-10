@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Learn TypeScript basics",
+        "description": "Complete TypeScript fundamentals tutorial"
+    },
+    {
+        "id": 2,
+        "title": "Practice TS exercises",
+        "description": "Solve 20 TypeScript coding challenges"
+    },
+    {
+        "id": 3,
+        "title": "Build React TS component",
+        "description": "Create first functional component with props"
+    },
+    {
+        "id": 4,
+        "title": "Set up React TypeScript project",
+        "description": "Configure CRA with TypeScript template"
+    },
+    {
+        "id": 5,
+        "title": "Learn React hooks with TS",
+        "description": "Master useState and useEffect typing"
+    },
+    {
+        "id": 6,
+        "title": "Type JSON data interface",
+        "description": "Create TypeScript interfaces for app data"
+    }
+]
